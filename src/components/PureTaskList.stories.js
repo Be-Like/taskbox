@@ -1,11 +1,11 @@
-import TaskList from "./TaskList.vue";
+import PureTaskList from "./PureTaskList.vue";
 
 import * as TaskStories from "./Task.stories";
 
 export default {
-  component: TaskList,
+  component: PureTaskList,
 
-  title: "TaskList",
+  title: "PureTaskList",
 
   // Decorators 👇 used to provide arbitrary wrappers to stories (eg. adding padding around rendered components).
   decorators: [
@@ -21,8 +21,8 @@ export default {
 };
 
 const Template = (args) => ({
-  components: { TaskList },
-  template: '<TaskList v-bind="args" />',
+  components: { PureTaskList },
+  template: '<PureTaskList v-bind="args" />',
   setup() {
     console.log("Template arguments:", args);
     return { args, ...TaskStories.actionsData };
