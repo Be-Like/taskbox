@@ -24,7 +24,6 @@ const Template = (args) => ({
   components: { PureTaskList },
   template: '<PureTaskList v-bind="args" />',
   setup() {
-    console.log("Template arguments:", args);
     return { args, ...TaskStories.actionsData };
   },
 });

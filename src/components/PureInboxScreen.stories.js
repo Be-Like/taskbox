@@ -15,7 +15,6 @@ const store = createStore({
 
   mutations: {
     ARCHIVE_TASK(state, id) {
-      console.log("Made it to the mutation");
       state.tasks.find((task) => task.id === id).state = "TASK_ARCHIVED";
     },
     PIN_TASK(state, id) {
@@ -25,11 +24,12 @@ const store = createStore({
 
   actions: {
     archiveTask(context, id) {
-      console.log("Made it here");
       action("archive-task")(id);
+      context.commit("ARCHIVE_TASK", id);
     },
     pinTask(context, id) {
       action("pin-task")(id);
+      context.commit("PIN_TASK", id);
     },
   },
 });
