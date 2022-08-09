@@ -20,6 +20,7 @@
         type="text"
         name="title"
         :id="`title-${task.id}`"
+        style="text-overflow: ellipsis"
         :value="task.title"
         placeholder="Input title"
         readonly
