@@ -1,18 +1,15 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <inbox-screen />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import InboxScreen from "./components/InboxScreen.vue";
 
 export default {
   name: "App",
-  components: {
-    HelloWorld
-  }
+  components: { InboxScreen },
 };
 </script>
 

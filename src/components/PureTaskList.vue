@@ -68,6 +68,7 @@ export default {
        * Event handler for archiving tasks
        */
       onArchiveTask(taskId) {
+        console.log("Called from vue component");
         emit("archive-task", taskId);
       },
 

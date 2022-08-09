@@ -16,6 +16,7 @@ export default createStore({
 
   mutations: {
     ARCHIVE_TASK(state, id) {
+      console.log("made it to this mutation");
       state.tasks.find((task) => task.id === id).state = "TASK_ARCHIVED";
     },
     PIN_TASK(state, id) {
@@ -25,6 +26,7 @@ export default createStore({
 
   actions: {
     archiveTask({ commit }, id) {
+      console.log("Getting here");
       commit("ARCHIVE_TASK", id);
     },
 

@@ -1,5 +1,9 @@
 <template>
-  <pure-task-list :tasks="tasks" @archive-task="archiveTask" @pin-task="pinTask"
+  <pure-task-list
+    :tasks="tasks"
+    @archive-task="archiveTask"
+    @pin-task="pinTask"
+  />
 </template>
 
 <script>
